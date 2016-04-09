@@ -2,6 +2,7 @@
 import React, { PropTypes, Component } from 'react';
 import styles from './HomePage.css';
 import withStyles from '../../decorators/withStyles';
+import WayPoint from 'react-waypoint';
 //@withStyles(bootstrap)
 @withStyles(styles)
 class ContentPage extends Component {
@@ -14,7 +15,22 @@ class ContentPage extends Component {
     onSetTitle: PropTypes.func.isRequired,
   };
 
-  state = {};
+  state = {
+    path : '#profile'
+  };
+
+  _handleWaypointEnter(link){
+    console.log('Way point enter')
+    console.log('link : ', link);
+    this.setState({
+      path : "#" + link
+    });
+    history.pushState(null, null,  "#" + link);
+  }
+
+  _handleWaypointLeave(){
+    console.log('Way point leave')
+  }
 
   handleScroll(){
     if(window.scrollY > this.lnStickyNavigation){
@@ -34,7 +50,6 @@ class ContentPage extends Component {
     window.addEventListener('scroll', this.handleScroll.bind(this));
     this.handleScroll();
     this.setFirstFoldHeight();
-
   }
 
   setFirstFoldHeight(){
@@ -45,6 +60,13 @@ class ContentPage extends Component {
     this.context.onSetTitle("Vishwanath Arondekar profile");
     return (
       <div className={"home-page " + this.state.fixed}>
+
+      <WayPoint
+        onEnter={(previousPosition, currentPosition, event) => {
+          this._handleWaypointEnter("");
+        }.bind(this)}
+      />
+
   <div id="top" className="jumbotron" ref="top" >
     <div className="container">
       <h1>Vishwanath Arondekar</h1>
@@ -56,9 +78,18 @@ class ContentPage extends Component {
     </a>
   </div>
 
-  <Navigation/>
+  <Navigation path={this.state.path}/>
+
+
 
   <div className="background-white">
+
+    <WayPoint
+        onEnter={(previousPosition, currentPosition, event) => {
+          this._handleWaypointEnter("profile");
+        }.bind(this)}
+      />
+
     <div id="profile" className="container">
       <h2>Profile</h2>
       <p className="lead">Pro web developer with a pinch of everything else</p>
@@ -86,6 +117,16 @@ class ContentPage extends Component {
         </div>
       </div>      </div>
     </div>
+
+    <WayPoint
+        onEnter={(previousPosition, currentPosition, event) => {
+          this._handleWaypointEnter("experiences");
+        }.bind(this)}
+        onLeave={(previousPosition, currentPosition, event) => {
+          //this._handleWaypointEnter("profile");
+        }.bind(this)}
+
+      />
 
     <div id="experiences" className="container">
       <h2>Experiences</h2>
@@ -152,6 +193,16 @@ class ContentPage extends Component {
         </div>
       </div>
     </div>
+
+    <WayPoint
+        onEnter={(previousPosition, currentPosition, event) => {
+          this._handleWaypointEnter("abilities");
+        }.bind(this)}
+        onLeave={(previousPosition, currentPosition, event) => {
+          //this._handleWaypointEnter("experiences");
+        }.bind(this)}
+
+      />
 
     <div className="background-white">
       <div id="abilities" className="container">
@@ -291,6 +342,16 @@ class ContentPage extends Component {
       </div>
 
 
+    <WayPoint
+        onEnter={(previousPosition, currentPosition, event) => {
+          this._handleWaypointEnter("projects");
+        }.bind(this)}
+        onLeave={(previousPosition, currentPosition, event) => {
+          //this._handleWaypointEnter("abilities");
+        }.bind(this)}
+
+      />
+
       <div id="projects" className="container">
         <h2>Projects</h2>
         <p className="lead">
@@ -329,8 +390,17 @@ class ContentPage extends Component {
             </figure>
           </div>
         </div>
-
       </div>
+
+    <WayPoint
+        onEnter={(previousPosition, currentPosition, event) => {
+          this._handleWaypointEnter("contact");
+        }.bind(this)}
+        onLeave={(previousPosition, currentPosition, event) => {
+          //this._handleWaypointEnter("projects");
+        }.bind(this)}
+
+      />
 
       <div className="background-gray">
         <div id="contact" className="container">
@@ -382,8 +452,14 @@ export default ContentPage;
 class Navigation extends Component{
 
   state={
-    path : '#profile'
+    path : this.props.path
   };
+
+  componentWillReceiveProps(props){
+    this.setState({
+      path : props.path
+    })
+  }
 
   componentDidMount(){
     this.handleScroll();
