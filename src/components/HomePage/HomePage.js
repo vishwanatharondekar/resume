@@ -55,25 +55,9 @@ class ContentPage extends Component {
       <span className="glyphicon glyphicon-chevron-down"></span>
     </a>
   </div>
-  <nav className="navbar navbar-default" id="navbar-example" role="navigation">
-    <div className="navbar-header">
-      <button type="button" className="navbar-toggle" >
-      <span className="sr-only">Toggle navigation</span>
-      <span className="icon-bar"></span>
-      <span className="icon-bar"></span>
-      <span className="icon-bar"></span>
-      </button>
-    </div>
-    <div className="collapse navbar-collapse navbar-ex1-collapse">
-      <ul className="nav navbar-nav">
-        <li className="active"><a href="#profile">Profile</a></li>
-        <li><a href="#experiences">Experiences</a></li>
-        <li><a href="#abilities">Abilities</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+
+  <Navigation/>
+
   <div className="background-white">
     <div id="profile" className="container">
       <h2>Profile</h2>
@@ -393,3 +377,67 @@ class ContentPage extends Component {
   }
 }
 export default ContentPage;
+
+
+class Navigation extends Component{
+
+  state={
+    path : '#profile'
+  };
+
+  componentDidMount(){
+    this.handleScroll();
+  }
+
+  handleScroll(){
+
+  }
+
+  onNavigate(path){
+    this.setState({
+      path : path
+    });
+  }
+
+  render(){
+    return (
+      <nav className="navbar navbar-default" id="navbar-example" role="navigation">
+        <div className="navbar-header">
+          <button type="button" className="navbar-toggle" >
+          <span className="sr-only">Toggle navigation</span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+          </button>
+        </div>
+        <div className="collapse navbar-collapse navbar-ex1-collapse">
+          <ul className="nav navbar-nav">
+            <NavigationLink currentPath={this.state.path} onNavigate={this.onNavigate.bind(this)} href="#profile">Profile</NavigationLink>
+            <NavigationLink currentPath={this.state.path} onNavigate={this.onNavigate.bind(this)} href="#experiences">Experiences</NavigationLink>
+            <NavigationLink currentPath={this.state.path} onNavigate={this.onNavigate.bind(this)} href="#abilities">Abilities</NavigationLink>
+            <NavigationLink currentPath={this.state.path} onNavigate={this.onNavigate.bind(this)} href="#projects">Projects</NavigationLink>
+            <NavigationLink currentPath={this.state.path} onNavigate={this.onNavigate.bind(this)} href="#contact">Contact</NavigationLink>
+          </ul>
+        </div>
+      </nav>
+    )
+  }
+}
+
+class NavigationLink extends Component{
+  navigate(){
+    this.props.onNavigate(this.props.href);
+  }
+
+  render(){
+    var isActive = this.props.currentPath===this.props.href;
+
+    return (
+      <li className={isActive?'active':''}>
+        <a onClick={this.navigate.bind(this)} href={this.props.href}>
+          {this.props.children}
+        </a>
+      </li>
+    )
+  }
+}
