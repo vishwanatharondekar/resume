@@ -13,17 +13,40 @@ class ContentPage extends Component {
   static contextTypes = {
     onSetTitle: PropTypes.func.isRequired,
   };
+
+  state = {};
+
+  handleScroll(){
+    if(window.scrollY > this.lnStickyNavigation){
+      this.setState({
+        fixed : 'fixed'
+      })
+    } else {
+      this.setState({
+        fixed : ''
+      })
+    }
+  }
+
+  componentDidMount(){
+    var scrollDownEl = this.refs['scroll-down']
+    this.lnStickyNavigation =     scrollDownEl.offsetTop  + 20;
+    window.addEventListener('scroll', this.handleScroll.bind(this));
+    this.handleScroll();
+  }
+
+
   render() {
     this.context.onSetTitle("Vishwanath Arondekar profile");
     return (
-      <div className="home-page">
+      <div className={"home-page " + this.state.fixed}>
   <div id="top" className="jumbotron" >
     <div className="container">
       <h1>Vishwanath Arondekar</h1>
       <p className="lead">Interactive resume</p>
     </div>
     <div className="overlay"></div>
-    <a href="#profile" className="scroll-down">
+    <a href="#profile" className="scroll-down" ref="scroll-down">
       <span className="glyphicon glyphicon-chevron-down"></span>
     </a>
   </div>
