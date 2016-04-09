@@ -10,6 +10,8 @@
 import path from 'path';
 import webpack from 'webpack';
 import merge from 'lodash.merge';
+import AssetsPlugin from 'assets-webpack-plugin';
+
 
 const DEBUG = !process.argv.includes('release');
 const VERBOSE = process.argv.includes('verbose');
@@ -65,6 +67,10 @@ const config = {
 
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
+
+
+
+
   ],
 
   resolve: {
@@ -109,9 +115,11 @@ const appConfig = merge({}, config, {
     ...(WATCH ? ['webpack-hot-middleware/client'] : []),
     './src/app.js',
   ],
+
   output: {
     path: path.join(__dirname, '../build/public'),
-    filename: 'app.js',
+    chunkFilename: DEBUG ? undefined : '[name].[chunkhash].js',
+    filename: DEBUG ? 'app.js' : '[name].[hash].js'
   },
 
   // Choose a developer tool to enhance debugging
@@ -120,6 +128,14 @@ const appConfig = merge({}, config, {
   plugins: [
     ...config.plugins,
     new webpack.DefinePlugin(GLOBALS),
+
+    new AssetsPlugin({
+      path: path.resolve(__dirname, '../build'),
+      filename: '../src/assets.js',
+      processOutput: x => `module.exports = ${JSON.stringify(x)};`,
+    }),
+
+
     ...(!DEBUG ? [
       new webpack.optimize.DedupePlugin(),
       new webpack.optimize.UglifyJsPlugin({

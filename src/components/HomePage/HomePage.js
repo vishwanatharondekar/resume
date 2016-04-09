@@ -16,12 +16,10 @@ class ContentPage extends Component {
   };
 
   state = {
-    path : '#profile'
+    path : '#'
   };
 
   _handleWaypointEnter(link){
-    console.log('Way point enter')
-    console.log('link : ', link);
     this.setState({
       path : "#" + link
     });
@@ -67,7 +65,7 @@ class ContentPage extends Component {
         }.bind(this)}
       />
 
-  <div id="top" className="jumbotron" ref="top" >
+  <div style={{"height" : "1000px"}} id="top" className="jumbotron" ref="top" >
     <div className="container">
       <h1>Vishwanath Arondekar</h1>
       <p className="lead">Interactive resume</p>
