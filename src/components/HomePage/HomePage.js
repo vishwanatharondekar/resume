@@ -366,8 +366,8 @@ class ContentPage extends Component {
               <figcaption>
               <h3>XpenseShare</h3>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <p><strong>Tags:</strong> <br />Development, Wordpress, Bootstrap</p>
-              <a href="http://studiomals.com" target="_blank">View more</a>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
               <span className="icon">
                 <span className="glyphicon glyphicon-new-window"></span>
               </span>
@@ -378,11 +378,169 @@ class ContentPage extends Component {
           <div className="col-md-6 col-sm-12 col-xs-12">
             <figure className="effect">
               <img src="/view/images/project_xpenseshare.jpg" alt="XpenseShare" />
+
               <figcaption>
               <h3>XpenseShare</h3>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <p><strong>Tags:</strong> <br />Development, Design, Bootstrap, Wordpress</p>
-              <a href="http://medischbiomagnetisme.com" target="_blank">View more</a>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
+              <span className="icon">
+                <span className="glyphicon glyphicon-new-window"></span>
+              </span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div className="col-md-6 col-sm-12 col-xs-12">
+            <figure className="effect">
+              <img src="/view/images/project_xpenseshare.jpg" alt="XpenseShare" />
+
+              <figcaption>
+              <h3>XpenseShare</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
+              <span className="icon">
+                <span className="glyphicon glyphicon-new-window"></span>
+              </span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div className="col-md-6 col-sm-12 col-xs-12">
+            <figure className="effect">
+              <img src="/view/images/project_xpenseshare.jpg" alt="XpenseShare" />
+
+              <figcaption>
+              <h3>XpenseShare</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
+              <span className="icon">
+                <span className="glyphicon glyphicon-new-window"></span>
+              </span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div className="col-md-6 col-sm-12 col-xs-12">
+            <figure className="effect">
+              <img src="/view/images/project_xpenseshare.jpg" alt="XpenseShare" />
+
+              <figcaption>
+              <h3>XpenseShare</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
+              <span className="icon">
+                <span className="glyphicon glyphicon-new-window"></span>
+              </span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div className="col-md-6 col-sm-12 col-xs-12">
+            <figure className="effect">
+              <img src="/view/images/project_xpenseshare.jpg" alt="XpenseShare" />
+
+              <figcaption>
+              <h3>XpenseShare</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
+              <span className="icon">
+                <span className="glyphicon glyphicon-new-window"></span>
+              </span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div className="col-md-6 col-sm-12 col-xs-12">
+            <figure className="effect">
+              <img src="/view/images/project_xpenseshare.jpg" alt="XpenseShare" />
+
+              <figcaption>
+              <h3>XpenseShare</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
+              <span className="icon">
+                <span className="glyphicon glyphicon-new-window"></span>
+              </span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div className="col-md-6 col-sm-12 col-xs-12">
+            <figure className="effect">
+              <img src="/view/images/project_xpenseshare.jpg" alt="XpenseShare" />
+
+              <figcaption>
+              <h3>XpenseShare</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
+              <span className="icon">
+                <span className="glyphicon glyphicon-new-window"></span>
+              </span>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="col-md-6 col-sm-12 col-xs-12">
+            <figure className="effect">
+              <img src="/view/images/project_xpenseshare.jpg" alt="XpenseShare" />
+
+              <figcaption>
+              <h3>XpenseShare</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
+              <span className="icon">
+                <span className="glyphicon glyphicon-new-window"></span>
+              </span>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="col-md-6 col-sm-12 col-xs-12">
+            <figure className="effect">
+              <img src="/view/images/project_xpenseshare.jpg" alt="XpenseShare" />
+
+              <figcaption>
+              <h3>XpenseShare</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
+              <span className="icon">
+                <span className="glyphicon glyphicon-new-window"></span>
+              </span>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="col-md-6 col-sm-12 col-xs-12">
+            <figure className="effect">
+              <img src="/view/images/project_xpenseshare.jpg" alt="XpenseShare" />
+
+              <figcaption>
+              <h3>XpenseShare</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
+              <span className="icon">
+                <span className="glyphicon glyphicon-new-window"></span>
+              </span>
+              </figcaption>
+            </figure>
+          </div>
+
+
+          <div className="col-md-6 col-sm-12 col-xs-12">
+            <figure className="effect">
+              <img src="/view/images/project_xpenseshare.jpg" alt="XpenseShare" />
+              <figcaption>
+              <h3>XpenseShare</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p><strong>Tags:</strong> <br />Development, Bootstrap</p>
+              <a href="http://xpenseshare.com" target="_blank">View more</a>
               <span className="icon">
                 <span className="glyphicon glyphicon-new-window"></span>
               </span>
@@ -452,26 +610,30 @@ export default ContentPage;
 class Navigation extends Component{
 
   state={
-    path : this.props.path
+    path : this.props.path,
+    open: false
   };
 
   componentWillReceiveProps(props){
     this.setState({
-      path : props.path
+      path : props.path,
+      open:false
     })
   }
 
   componentDidMount(){
-    this.handleScroll();
   }
 
-  handleScroll(){
-
+  toggleNavBar(){
+    this.setState({
+      open : !this.state.open
+    })
   }
 
   onNavigate(path){
     this.setState({
-      path : path
+      path : path,
+      open : false
     });
   }
 
@@ -479,14 +641,14 @@ class Navigation extends Component{
     return (
       <nav className="navbar navbar-default" id="navbar-example" role="navigation">
         <div className="navbar-header">
-          <button type="button" className="navbar-toggle" >
+          <button type="button" className="navbar-toggle" onClick={this.toggleNavBar.bind(this)} >
           <span className="sr-only">Toggle navigation</span>
           <span className="icon-bar"></span>
           <span className="icon-bar"></span>
           <span className="icon-bar"></span>
           </button>
         </div>
-        <div className="collapse navbar-collapse navbar-ex1-collapse">
+        <div className={("collapse navbar-collapse navbar-ex1-collapse") + (this.state.open?' collapse in' : '')}>
           <ul className="nav navbar-nav">
             <NavigationLink currentPath={this.state.path} onNavigate={this.onNavigate.bind(this)} href="#profile">Profile</NavigationLink>
             <NavigationLink currentPath={this.state.path} onNavigate={this.onNavigate.bind(this)} href="#experiences">Experiences</NavigationLink>
