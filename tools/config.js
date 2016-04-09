@@ -225,7 +225,7 @@ const serverConfig = merge({}, config, {
       ...config.module.loaders,
       {
         test: /\.css$/,
-        loader: 'css-loader!postcss-loader',
+        loader: 'css-loader?minimize!postcss-loader',
       },
     ],
   },

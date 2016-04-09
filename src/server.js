@@ -7,7 +7,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/server';
 import Router from './routes';
 import Html from './components/Html';
-import assets from './assets';
 
 const server = global.server = express();
 
@@ -38,6 +37,8 @@ server.get('*', async (req, res, next) => {
       data.body = ReactDOM.renderToString(component);
       data.css = css.join('');
     });
+
+    let assets = require('./assets');
 
     data.entry = assets.main.js;
     const html = ReactDOM.renderToStaticMarkup(<Html {...data} />);
