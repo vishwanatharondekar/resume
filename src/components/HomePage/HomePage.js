@@ -33,14 +33,19 @@ class ContentPage extends Component {
     this.lnStickyNavigation =     scrollDownEl.offsetTop  + 20;
     window.addEventListener('scroll', this.handleScroll.bind(this));
     this.handleScroll();
+    this.setFirstFoldHeight();
+
   }
 
+  setFirstFoldHeight(){
+    this.refs["top"].style.height = screen.height +'px'
+  }
 
   render() {
     this.context.onSetTitle("Vishwanath Arondekar profile");
     return (
       <div className={"home-page " + this.state.fixed}>
-  <div id="top" className="jumbotron" >
+  <div id="top" className="jumbotron" ref="top" >
     <div className="container">
       <h1>Vishwanath Arondekar</h1>
       <p className="lead">Interactive resume</p>
