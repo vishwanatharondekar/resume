@@ -82,11 +82,13 @@ class ContentPage extends Component {
 
         <Navigation path={this.state.path}/>
 
+        <div style={{paddingTop:"10px", background:'white'}} className="background-white"></div>
         <WayPoint
             onEnter={(previousPosition, currentPosition, event) => {
               this._handleWaypointEnter("profile");
             }.bind(this)}
           />
+
         <Profile/>
 
         <WayPoint
