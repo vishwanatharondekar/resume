@@ -56,7 +56,7 @@ class ContentPage extends Component {
   }
 
   setFirstFoldHeight(){
-    this.refs["top"].style.height = screen.height +'px'
+    this.refs["top"].style.height = window.innerHeight +'px'
   }
 
   render() {
