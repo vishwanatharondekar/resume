@@ -7,7 +7,7 @@ class Abilities extends Component{
       <div id="abilities" className="container">
         <h2>Abilities</h2>
         <p className="lead">
-          “Quote”<br />- Quote By
+          “knowledge is not skill. Knowledge plus ten thousand times is skill”<br />- Shinichi Suzuki
         </p>
         <hr />
         <h3>Skills</h3>
@@ -67,39 +67,6 @@ class Abilities extends Component{
         <div className="text-center project-referal">
           <p>This project is built on react starter kit.</p>
           <a href="https://github.com/vishwanatharondekar/resume" className="btn btn-primary" target="_blank">See project on Github</a>
-        </div>
-        <hr />
-        <h3>Languages</h3>
-        <div className="row">
-
-          <div className="col-md-6">
-            <ul className="no-bullets">
-              <li>
-                <span className="ability-title">Marathi (Mother tongue)</span>
-                <span className="ability-score">
-                  <span className="glyphicon glyphicon-star filled"></span>
-                  <span className="glyphicon glyphicon-star filled"></span>
-                  <span className="glyphicon glyphicon-star filled"></span>
-                  <span className="glyphicon glyphicon-star filled"></span>
-                  <span className="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div className="col-md-6">
-            <ul className="no-bullets">
-              <li>
-                <span className="ability-title">English (Daily use)</span>
-                <span className="ability-score">
-                  <span className="glyphicon glyphicon-star filled"></span>
-                  <span className="glyphicon glyphicon-star filled"></span>
-                  <span className="glyphicon glyphicon-star filled"></span>
-                  <span className="glyphicon glyphicon-star filled"></span>
-                  <span className="glyphicon glyphicon-star filled"></span>
-                </span>
-              </li>
-            </ul>
-          </div>
         </div>
         <hr />
         <h3>Tools</h3>

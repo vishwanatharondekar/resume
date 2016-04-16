@@ -6,7 +6,7 @@ class Contact extends Component{
         <div id="contact" className="container">
           <h2>Contact</h2>
           <p className="lead">
-            “Quote ”<br />- Quote By
+            "Experience is simply the name we give our mistakes."<br />- Oscar Wilde
           </p>
           <hr />
           <div className="row">

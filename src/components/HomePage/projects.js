@@ -5,7 +5,7 @@ class Projects extends Component{
     return(<div id="projects" className="container">
         <h2>Projects</h2>
         <p className="lead">
-          “Quote”<br />- Quote By
+          “The more I accomplish, the more I know I'm capable of accomplishing.”<br />- Tawny Lara
         </p>
         <hr />
         <div className="row">

@@ -6,7 +6,7 @@ class Experiences extends Component{
     return (<div id="experiences" className="container">
         <h2>Experiences</h2>
         <p className="lead">
-            “Quote”<br />- Quote By
+            “The only source of knowledge is experience”<br />- Albert Einstein
         </p>
         <hr />
 
