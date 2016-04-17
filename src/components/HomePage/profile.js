@@ -28,7 +28,7 @@ class Profile extends React.Component{
               <div className="col-md-8">
                 <h3>About me</h3>
                 <p>
-                  Programmer by heart who have been in multiple roles like Team leader, Manager, Frontend Architect over the career of seven years. Enjoys programming as much as getting involved in all phases of projects for planning to deployment. Capable of taking project from ideation to production deployemnt. Love working in a team.
+                  Programmer by heart who have been in multiple roles like Team leader, Manager, Frontend Architect over the career of seven years. Enjoys programming as much as getting involved in all phases of projects for planning to deployment. Capable of taking project from ideation to production deployment. Love working in a team.
                 </p>
                 </div>
 
