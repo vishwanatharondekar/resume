@@ -7,7 +7,7 @@ class Abilities extends Component{
       <div id="abilities" className="container">
         <h2>Abilities</h2>
         <p className="lead">
-          “knowledge is not skill. Knowledge plus ten thousand times is skill”<br />- Shinichi Suzuki
+          “Knowledge is not skill. Knowledge plus ten thousand times is skill”<br />- Shinichi Suzuki
         </p>
         <hr />
         <h3>Skills</h3>
