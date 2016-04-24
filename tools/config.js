@@ -92,6 +92,7 @@ const config = {
         test: /\.(eot|ttf|wav|mp3)$/,
         loader: 'file-loader',
       },
+
     ],
   },
 
@@ -179,6 +180,10 @@ const appConfig = merge({}, config, {
         test: /\.css$/,
         loader: 'style-loader/useable!css-loader!postcss-loader',
       },
+      {
+        test: /\.scss$/,
+        loader: DEBUG ? "style-loader/useable!css-loader?sourceMap!sass-loader?sourceMap" : "style-loader/useable!css-loader!sass-loader"
+      }
     ],
   },
 });
@@ -227,6 +232,10 @@ const serverConfig = merge({}, config, {
         test: /\.css$/,
         loader: 'css-loader?minimize!postcss-loader',
       },
+      {
+        test: /\.scss$/,
+        loader: 'css-loader?minimize!sass-loader',
+      }
     ],
   },
 });
