@@ -100,6 +100,7 @@ class ChatPageStore {
 
     handleSelectConversation(member){
       this.selectedMember = member;
+      this.currentLeftPaneScreen = 'chat';
     }
 
 }

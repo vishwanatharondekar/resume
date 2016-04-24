@@ -41,7 +41,7 @@ class ChatWindow extends Component{
 
           </div>
           <div className="input-container">
-            <input/>
+            <input placeholder="Type a message..."/>
           </div>
       </div>);
   }

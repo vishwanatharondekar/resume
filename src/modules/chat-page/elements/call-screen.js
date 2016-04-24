@@ -10,6 +10,16 @@ class CallScreen extends Component{
     ChatPageActions.showChat();
   }
 
+  timerContent(){
+    var timerValue = this.state.timer;
+    var minutes = parseInt(timerValue/60);
+    minutes = minutes<10?"0" + minutes : minutes;
+    var seconds = timerValue % 60;
+    seconds = seconds<10?"0" + seconds : seconds;
+    return(
+      <span>{minutes}:{seconds}</span>)
+  }
+
   componentDidMount(){
     var _this = this;
     this.interval = setInterval( function(){
@@ -26,7 +36,7 @@ class CallScreen extends Component{
         </div>
         <div className="color-overlay"></div>
         <div className="profile-content col-xs-12 text-center">
-            {this.state.timer}
+            {this.timerContent()}
             <div>
               <img className="pic-in-circle" src={require('./../images/vishwanath.jpg')}/>
             </div>
