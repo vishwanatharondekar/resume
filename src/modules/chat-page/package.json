@@ -1,0 +1,5 @@
+{
+  "name" :"chat-page",
+  "main" : "chat-page.js",
+  "version" : "0.0.1"
+}
