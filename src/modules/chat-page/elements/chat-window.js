@@ -16,8 +16,10 @@ class ChatWindow extends Component{
   }
 
   render(){
+    var selectedMember = this.props.data.selectedMember;
+    var messages = selectedMember.messages;
     return(
-      <div className="row">
+      <div className="row chat-window-container">
           <div className="chat-window-header header">
             <span>{this.props.data.selectedMember.name}</span>
             <div className="buttons-container">
@@ -27,7 +29,19 @@ class ChatWindow extends Component{
             </div>
           </div>
           <div className="content">
-            Chat messages here
+          <ul className="messages">
+          {
+            messages.map(function(message){
+              return (<li>
+                <span>{selectedMember.name} :</span><span>{message.content}</span>
+                </li>)
+            })
+          }
+          </ul>
+
+          </div>
+          <div className="input-container">
+            <input/>
           </div>
       </div>);
   }

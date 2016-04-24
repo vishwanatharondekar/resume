@@ -20,5 +20,9 @@ class ChatPageActions {
     doEmail(){
       this.dispatch();
     }
+
+    selectConversation(member){
+      this.dispatch(member);
+    }
 }
 export default alt.createActions(ChatPageActions);
