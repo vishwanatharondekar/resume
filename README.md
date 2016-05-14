@@ -1,5 +1,5 @@
 ##Resume
-Code for resume hosted at [vishwanatharondekar.github.com](vishwanatharondekar.github.com)
+Code for resume hosted at [vishwanatharondekar.github.com](https://vishwanatharondekar.github.com)
 
 ##Forked from
 This project is forked from [react-starter-kit](https://github.com/kriasoft/react-starter-kit) v4.0 for developing the resume.
